@@ -1,0 +1,102 @@
+:root{
+  --main-bg-color: #f8f9fa;
+  --main-text-color: #325fbe;
+  --accent-color:lightseagreen; 
+}
+
+body {
+  background-color: var(--main-bg-color); 
+}
+
+.carousel-inner img{
+  max-width: 100%;
+  height: auto;
+
+}
+.projectCarousel {
+  width: 750px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.navbar {
+  border-bottom: var(--accent-color) solid 2px; 
+}
+.navbar-nav .active>.nav-link {
+  padding: 5px 25px;
+}
+
+.navbar-nav .active>.nav-link:hover {
+ transition: 0.3s; 
+ background-color: var(--accent-color);
+ color: white;
+ border-radius: 20px 20px 20px 20px;
+}
+
+hr {
+  background-color:var(--accent-color);
+  height: 4px;
+}
+
+.jumbotron {
+  background-color: var(--main-bg-color); 
+}
+
+#me {
+  margin-right: 50px;
+}
+#contactForm {
+  width: 400px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+}
+
+label {
+  display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+input, textarea{
+  width: 100%;
+  border: 1px grey solid; 
+  border-radius: 5px; 
+}
+
+#submit { 
+  background-color: transparent; 
+  border: none; 
+}
+#submit:hover{
+  transition: 0.3s;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+
+    .bottom {
+      left: 0;
+      bottom: 0;
+      height:35px;
+      width: 100%;
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+    }
+ 
+
+	.btn-linkedin, .btn-github, .btn-resume {
+    background-color: transparent; 
+    border: none; 
+    color: white;
+    padding: 5px;
+  }
+  
+  .btn-linkedin:hover, .btn-github:hover, .btn-resume:hover{
+    transition: 0.3s;
+    background-color: var(--main-bg-color);
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+  }
