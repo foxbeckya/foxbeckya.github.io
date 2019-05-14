@@ -8,18 +8,6 @@ body {
   background-color: var(--main-bg-color); 
 }
 
-.carousel-inner img{
-  max-width: 100%;
-  height: auto;
-
-}
-.projectCarousel {
-  width: 750px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
 .navbar {
   border-bottom: var(--accent-color) solid 2px; 
 }
@@ -28,7 +16,7 @@ body {
 }
 
 .navbar-nav .active>.nav-link:hover {
- transition: 0.3s; 
+ transition: 0.30.5s; 
  background-color: var(--accent-color);
  color: white;
  border-radius: 20px 20px 20px 20px;
@@ -41,11 +29,48 @@ hr {
 
 .jumbotron {
   background-color: var(--main-bg-color); 
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #me {
   margin-right: 50px;
 }
+.card-group {
+  padding: 5px;
+  margin: 10px;
+}
+
+.card-group>.card+ .card, .card-group>.card{
+  border-left: 1px grey solid;
+  border-radius: 5px; 
+}
+
+.card {
+  margin: 10px;
+  border: 1px grey solid; 
+  border-radius: 5px !important;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: .5;
+}
+
+.card-title {
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.card-body{
+  height: 100px;
+  color: var(--main-text-color);
+}
+
+.card-img-top{
+  height: 250px;
+}
+
 #contactForm {
   width: 400px; 
   margin-left: auto;
@@ -59,6 +84,7 @@ label {
     flex-wrap: wrap;
 }
 
+
 input, textarea{
   width: 100%;
   border: 1px grey solid; 
@@ -69,29 +95,34 @@ input, textarea{
   background-color: transparent; 
   border: none; 
 }
-#submit:hover{
+#submit:hover, #submit:focus {
   transition: 0.3s;
   background-color: var(--accent-color);
   color: white;
   border-radius: 10px 10px 10px 10px;
+  outline: var(--accent-color);
 }
 
     .bottom {
       left: 0;
       bottom: 0;
-      height:35px;
+      height:50px;
       width: 100%;
       background-color: var(--accent-color);
       color: white;
       text-align: center;
     }
- 
+ .bottom > p {
+   margin-bottom: 0;
+ }
+
 
 	.btn-linkedin, .btn-github, .btn-resume {
     background-color: transparent; 
     border: none; 
     color: white;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 8px;
   }
   
   .btn-linkedin:hover, .btn-github:hover, .btn-resume:hover{
@@ -100,3 +131,12 @@ input, textarea{
     color: black;
     border-radius: 10px 10px 10px 10px;
   }
+
+  .btn-linkedin:focus, .btn-github:focus, .btn-resume:focus{
+    transition: 0.3s;
+    background-color: var(--main-bg-color);
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+   box-shadow: 0 0 0 0;
+  }
+
